@@ -1,0 +1,36 @@
+a {
+    color:blue; 
+    margin:10px 10px;
+}
+
+.title {
+    color: #170355;
+    font-family: 'Poppins', sans-serif;
+    margin: 50px 10px;
+    text-align: center;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up {
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin: 40px 10%;
+}
+
+fieldset {
+    margin-left: 15%;
+}
+.sign-up-btn {
+    align-self: center;
+}
+

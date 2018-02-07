@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Slim 3</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body> 
+            
+        {% if username is defined %}
+        <h3> welcome {{username}} you have to sign Up</h3>
+        {% else %}
+        {% if (isValide) %}
+            <h3 class="text-center"> welcome {{email|escape}} </h3>
+        {% else %}
+            <h3 class="text-center" style = 'color:red;'> User not found </h3>
+        {% endif %}
+        {% endif %}
+
+    </body>
+</html>

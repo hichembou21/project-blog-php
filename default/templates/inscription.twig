@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-dark bg-primary">
+
+        <a class="navbar-brand" href="/"><img src="/img/blog.png" alt="blog picture" width="90" height="50"></a>
+        <form class="form-inline" action="/inscription" method="POST" id="form-sign-in">
+
+            <div class="form-group col-md-4">
+                <label>Email address</label>
+                <input type="email" class="form-control" name="email" placeholder="your email" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+            </div>
+            <a href="{{path_for('inscription')}}">Create a count!</a>
+                        
+            <button type="submit" class="btn btn-light">Sign in</button>
+
+        </form> 
+    </nav>
+    </header>  
+    <section class="sign-up container-col">
+        <h2 class="title"> Sign Up </h2>
+
+        <form class="form-sign-up container-col" action="{{path_for('login')}}" method="post">
+            <fieldset class="form-group">
+            <div class="form-group row">
+                <label for="input-username" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="username" placeholder="your surname" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="input-email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="input-password" class="col-sm-2 col-form-label">Password</label>                
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                </div>
+            </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary sign-up-btn">Sign in</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="card-footer text-muted">
+            fin de page
+        </div>
+    </footer>  
+    
+</body>
+</html>

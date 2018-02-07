@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Slim 3</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+        <nav class="navbar navbar-dark bg-primary">
+
+            <a class="navbar-brand" href="/"><img src="/img/blog.png" alt="blog picture" width="90" height="50"></a>
+            <form class="form-inline" action="/login" method="POST" id="form-sign-in">
+
+                <div class="form-group col-md-4">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" name="email" placeholder="your email">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <a href="{{path_for('inscription')}}">Create a count!</a>
+                            
+                <button type="submit" class="btn btn-dark">Sign in</button>
+        
+            </form> 
+        </nav>
+        </header>  
+        
+    <footer>
+        <div class="card-footer text-muted">
+            fin de page
+        </div>
+    </footer>     
+    </body>
+</html>
